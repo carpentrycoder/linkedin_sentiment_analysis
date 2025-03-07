@@ -1,0 +1,120 @@
+/* Dark mode background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  margin: 0;
+  background-color: #1e1e1e; /* Dark theme background */
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* White text */
+}
+
+
+/* ChatGPT-style container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+  background: #2a2a2a; /* Dark grey panel */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.2);
+}
+/* Header/title */
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+nav{
+  padding: 2vw 2vw;
+ width: 100%;
+ /* background-color: red */
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+/* Chat-style message area */
+.message-area {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+/* Input form */
+form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+
+/* ChatGPT-style input box */
+input {
+  flex-grow: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  background-color: #40414f; /* ChatGPT dark input */
+  color: white;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+input::placeholder {
+  color: #a1a1a1;
+}
+
+/* Send button */
+button {
+  background-color: #ffffff; /* ChatGPT-style send button */
+  color: black;
+  font-size: 1rem;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffffffb6;
+}
+
+/* Scrollable message area */
+.message-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.message-area::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    height: 85vh;
+  }
+}
