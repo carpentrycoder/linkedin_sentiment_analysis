@@ -17,7 +17,7 @@ const ProfileInput = ({ setResult }) => {
         profile_url: profileURL,
 
       });
-      console.log(profileURL)
+      console.log(profile_url)
   
       console.log("✅ Received Response:", response.data); // Debugging log
       setResult(response.data);
